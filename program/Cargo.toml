@@ -4,7 +4,7 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-# sp1-poseidon2-bn256.workspace = true
+sp1-poseidon2-bn256.workspace = true
 sp1-zkvm.workspace = true
 
 # Greatly reduces cycle count when executing the zkVM program
