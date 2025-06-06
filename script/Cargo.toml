@@ -1,0 +1,27 @@
+[package]
+name = "poseidon2-script"
+default-run = "poseidon2"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "poseidon2"
+path = "src/bin/main.rs"
+
+[[bin]]
+name = "vkey"
+path = "src/bin/vkey.rs"
+
+[dependencies]
+sp1-sdk.workspace = true
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+serde = { version = "1.0.200", default-features = false, features = ["derive"] }
+clap = { version = "4.0", features = ["derive", "env"] }
+tracing = "0.1.40"
+hex.workspace = true
+zkhash.workspace = true
+sp1-poseidon2-bn256.workspace = true
+dotenv = "0.15.0"
+
+[build-dependencies]
+sp1-build.workspace = true
