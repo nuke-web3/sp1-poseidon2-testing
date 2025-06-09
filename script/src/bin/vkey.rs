@@ -1,4 +1,4 @@
-use sp1_sdk::{include_elf, HashableKey, Prover, ProverClient};
+use sp1_sdk::{HashableKey, Prover, ProverClient, include_elf};
 
 /// The ELF (executable and linkable format) file for the Succinct RISC-V zkVM.
 pub const POSEIDON2_ELF: &[u8] = include_elf!("poseidon2-program");

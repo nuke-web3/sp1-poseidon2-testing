@@ -14,9 +14,9 @@ sp1-build = "5.0"
 crypto-bigint = "=0.5.5"
 # IMPORTANT: this needs to match the sp1-poseidon2-bn256 crate!
 zkhash = "=0.2.0"
-# sp1-poseidon2-bn256 = { path = "../sp1-poseidon2-bn254-scalar" }
+sp1-poseidon2-bn256 = { path = "../sp1-poseidon2-bn254-scalar" }
 # TODO: tag & maybe publish on crates.io?
-sp1-poseidon2-bn256 = { git = "https://github.com/S1nus/sp1-poseidon2-bn254-scalar" , branch = "n/fixes-sp1-demo"}
+# sp1-poseidon2-bn256 = { git = "https://github.com/S1nus/sp1-poseidon2-bn254-scalar" , branch = "n/fixes-sp1-demo"}
 
 [patch.crates-io]
 crypto-bigint = { git = "https://github.com/sp1-patches/RustCrypto-bigint", tag = "patch-0.5.5-sp1-4.0.0" }

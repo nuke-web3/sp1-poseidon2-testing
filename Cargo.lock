@@ -3806,7 +3806,6 @@ dependencies = [
 [[package]]
 name = "sp1-poseidon2-bn256"
 version = "0.2.0"
-source = "git+https://github.com/S1nus/sp1-poseidon2-bn254-scalar?branch=n%2Ffixes-sp1-demo#e97d20232d117c9263f5b1ee4aea9eeecb07b9c5"
 dependencies = [
  "crypto-bigint",
  "hex",
