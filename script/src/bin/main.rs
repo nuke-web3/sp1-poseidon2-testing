@@ -71,6 +71,7 @@ fn main() {
 
         // Record the number of cycles executed.
         println!("Number of cycles: {}", report.total_instruction_count());
+        println!("Prover Gas: {}", report.gas.unwrap_or(0));
     } else {
         // Setup the program for proving.
         let (pk, vk) = client.setup(POSEIDON2_ELF);
