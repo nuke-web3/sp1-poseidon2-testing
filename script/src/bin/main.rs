@@ -11,7 +11,7 @@
 //! ```
 
 use clap::Parser;
-use sp1_sdk::{include_elf, ProverClient, SP1Stdin};
+use sp1_sdk::{ProverClient, SP1Stdin, include_elf};
 
 // TODO: test against known good lib
 // use zkhash::{
@@ -23,7 +23,7 @@ use sp1_sdk::{include_elf, ProverClient, SP1Stdin};
 pub const POSEIDON2_ELF: &[u8] = include_elf!("poseidon2-program");
 
 /// Example: Eight 32 byte hashes bn254 scalar field elements represented as [u8; 32].
-pub const INPUT_BYTES: &[u8; 32*8] = &[0u8; 32*8];
+pub const INPUT_BYTES: &[u8; 32 * 8] = &[0u8; 32 * 8];
 
 /// The arguments for the command.
 #[derive(Parser, Debug)]
@@ -67,10 +67,7 @@ fn main() {
         // Read the output.
         // - poseidon2 hash = 32 bytes
         let output_hash = output.to_vec();
-        println!(
-            "zkVM -> hash: 0x{}",
-            hex::encode(output_hash)
-        );
+        println!("zkVM -> hash: 0x{}", hex::encode(output_hash));
 
         // Record the number of cycles executed.
         println!("Number of cycles: {}", report.total_instruction_count());

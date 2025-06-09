@@ -1,6 +1,5 @@
 # SP1 Poseidon2 (BN256)
 
-
 ## Requirements
 
 - [Rust](https://rustup.rs/)
